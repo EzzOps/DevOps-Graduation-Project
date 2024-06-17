@@ -8,13 +8,13 @@
     - For backend, it removes the current running backend container and runs the new one with the "restart unless-stopped" option.
     - For frontend, Docker Compose is used because Traefik runs with the frontend container. With every CD, the frontend image tag in the Docker Compose is replaced.
 
-## Dockerfile
+##### Dockerfile
 
 - Backend: Follows all the best practices related to image size and security (0 CSV). However, critical environment variables need to be put in the Dockerfile.
 - Frontend: Same practices as the backend.
 
 
-**Current Problems:**
+## **Current Problems:**
 
 - Only one database is used for development, production, and penetration testing.
 
