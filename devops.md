@@ -20,14 +20,14 @@
 
 - Need separate environments for backend and frontend:
     - Penetration testing environment for isolated testing.
-    - Development environment with a stable backend.
+    - Development environment for the frontend with a stable backend (container & database).
     - Production environment.
 
 - Using ngrok to expose the local backend container has limitations in the long term due to request limits for free users.
 
 - Backend experiences downtime due to a single point of failure.
 
-- Lack of a robust logging and monitoring solution, currently relying on docker logs.
+- Lack of a logging and monitoring solution, currently relying on docker logs.
 
 - CI/CD occasionally delivers non-working containers without a check step to ensure correct functionality.
 
